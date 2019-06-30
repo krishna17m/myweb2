@@ -1,0 +1,36 @@
+
+for deployment let's find out right plugin and use it
+
+install publish over ssh plugin
+
+fdsf
+
+this is vijays 2nd setup
+we can detach from one ec2 and attach to other ec2
+
+how do you give internet access to private subnet 
+we have to configure NAT instance or NAT gw
+NAT is network address translation
+it is used to configure secure internet access to the servers in pvt subnet
+NAT instance is normalinstance configured with NATing
+It has some additional configuration for NATTIN
+
+In which subnet we need to put NAT instance
+NAT instance must reside in public subnet with public or elastic IP
+NAT instance is IAAS, NAT gw is PAAS
+
+NAT instance :-
+
+1)Launch NAT instance from EC2 it is same like normal instance but we need to chose diff AMI
+
+chose private route tables and add it to NAT
+before we do this configuration we must disable source and destination check for NAT instance
+
+AWS has default source and destination check on all ec2 instances
+i.e when a traffice is initiated from ec2 the source of the traffic should be ec2
+otherwise this traffice is blocked by aws 
+
+diabling source destincation check on NAT instance
+
+
+
